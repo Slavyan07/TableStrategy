@@ -1,0 +1,24 @@
+﻿<Window x:Class="TableStrategy.GameView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TableStrategy"
+        mc:Ignorable="d"
+        Title="Игра" Height="664" Width="1112" Loaded="Window_Loaded" Closed="Window_Closed"
+		ResizeMode="NoResize">
+
+	<Grid>
+		<Canvas x:Name="GameGrid" Margin="46,36,352,95" MouseUp="GameGrid_MouseUp" Background="#FFE8E6E6"/>
+
+		<Label x:Name="StageText" FontSize="15" Content="{Binding CurrentGameStage}" HorizontalAlignment="Left" Margin="796,68,0,0" VerticalAlignment="Top" Width="245"/>
+		<Label x:Name="PlayerTurnText" FontSize="15" Content="{Binding CurrentTurnPlayerName}" HorizontalAlignment="Left" Margin="796,104,0,0" VerticalAlignment="Top" Width="245"/>
+		<Button x:Name="Skip" Content="Пропуск хода" HorizontalAlignment="Left" Margin="46,580,0,0" VerticalAlignment="Top" Height="45" Width="124" Click="Skip_Click"/>
+
+		<Label x:Name="Player1CoinsText" FontSize="15" Content="{Binding Player1CoinsCount}" HorizontalAlignment="Left" Margin="796,247,0,0" VerticalAlignment="Top" Width="257"/>
+		<Label x:Name="Player2CoinsText" FontSize="15" Content="{Binding Player2CoinsCount}" HorizontalAlignment="Left" Margin="796,285,0,0" VerticalAlignment="Top" Width="257"/>
+		<Button x:Name="ShopButton" Content="Магазин" HorizontalAlignment="Left" Margin="210,580,0,0" VerticalAlignment="Top" Height="43" Width="148" Click="ShopButton_Click"/>
+		<Button x:Name="SaveButton" Content="Сохранение" HorizontalAlignment="Left" Margin="616,580,0,0" VerticalAlignment="Top" Height="43" Width="144" Click="SaveButton_Click"/>
+
+	</Grid>
+</Window>

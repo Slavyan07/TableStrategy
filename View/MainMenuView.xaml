@@ -1,0 +1,16 @@
+﻿<Window x:Class="TableStrategy.MainMenuView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TableStrategy"
+        mc:Ignorable="d"
+        Title="Главное меню" Height="450" Width="447" Closed="Window_Closed"
+		ResizeMode="NoResize">
+	<Grid>
+		<Label Content="Главное меню" FontSize="20" HorizontalAlignment="Center" Margin="0,29,0,0" VerticalAlignment="Top"/>
+		<Button x:Name="NewGameButton" Content="Новая игра" FontSize="16" HorizontalAlignment="Center" Margin="0,156,0,0" VerticalAlignment="Top" Height="43" Width="161" Click="NewGameButton_Click"/>
+		<Button x:Name="LoadButton" Content="Загрузить игру" FontSize="16" HorizontalAlignment="Center" Margin="0,235,0,0" VerticalAlignment="Top" Height="43" Width="161" Click="LoadButton_Click"/>
+
+	</Grid>
+</Window>
